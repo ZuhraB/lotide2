@@ -1,9 +1,8 @@
 const countOnly = function(allItems, itemsToCount) {
   const results = {}
-  let counter = 0
   for (let item of allItems) {
     if (itemsToCount[item]) {
-      results[item] = counter++
+      results[item] += 1
     }
    
   }
