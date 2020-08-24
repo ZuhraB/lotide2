@@ -1,11 +1,4 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
 
-};
 const tail = function(arr) {
   let newArray = []
   if (arr.length > 1) {
@@ -17,9 +10,4 @@ const tail = function(arr) {
     return undefined
   }
 }
-let nums = [5,6,7]
-tail([5,6,7])
-assertEqual(nums.length, 3);
-let nums1 = []
-tail([])
-assertEqual(nums1.length, 0);
+module.exports = tail;
